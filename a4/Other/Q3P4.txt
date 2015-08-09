@@ -1,0 +1,143 @@
+Q4
+Starting Inference, with:
+Factors: 
+[NDG, FM, NA] -> 0.009
+[NDG, FM, ~NA] -> 0.01
+[~NDG, ~FM, ~NA] -> 0.675
+[NDG, ~FM, ~NA] -> 0
+[NDG, ~FM, NA] -> 0.145
+[~NDG, FM, NA] -> 0.002
+[~NDG, ~FM, NA] -> 0.145
+[~NDG, FM, ~NA] -> 0.015
+
+[~FM] -> 0.964
+[FM] -> 0.0357
+
+[FH, ~FM, NDG, ~FS] -> 0.02755
+[FH, ~FM, NDG, FS] -> 0.00554
+[~FH, ~FM, NDG, ~FS] -> 0.1102
+[FH, FM, ~NDG, FS] -> 0.0008
+[FH, FM, NDG, FS] -> 0.001
+[~FH, FM, NDG, FS] -> 0
+[~FH, ~FM, ~NDG, ~FS] -> 0.7790
+[~FH, FM, NDG, ~FS] -> 0.00632
+[FH, FM, ~NDG, ~FS] -> 0.00646
+[~FH, ~FM, NDG, FS] -> 0.0018
+[~FH, FM, ~NDG, FS] -> 0.00077
+[FH, ~FM, ~NDG, ~FS] -> 0
+[~FH, FM, ~NDG, ~FS] -> 0.000969
+[~FH, ~FM, ~NDG, FS] -> 0.0205
+[FH, ~FM, ~NDG, FS] -> 0.0205
+[FH, FM, NDG, ~FS] -> 0.01173
+
+[~FS] -> 0.95
+[FS] -> 0.05
+
+[FS, ~FB] -> 0.02
+[~FS, FB] -> 0.095
+[FS, FB] -> 0.03
+[~FS, ~FB] -> 0.855
+
+[NA] -> 0.3
+[~NA] -> 0.7
+
+Query: [FS]
+Hidden: [NDG, NA]
+Evidence: [FH, FM, FB]
+
+--------------------------------------
+1: Restrict Factors based on Evidence [FH, FM, FB]
+Factors after restrictions: 
+[NDG, NA] -> 0.009
+[~NDG, NA] -> 0.002
+[~NDG, ~NA] -> 0.015
+[NDG, ~NA] -> 0.01
+
+[~NDG, ~FS] -> 0.00646
+[NDG, ~FS] -> 0.01173
+[NDG, FS] -> 0.001
+[~NDG, FS] -> 0.0008
+
+[~FS] -> 0.95
+[FS] -> 0.05
+
+[FS] -> 0.03
+[~FS] -> 0.095
+
+[NA] -> 0.3
+[~NA] -> 0.7
+
+--------------------------------------
+2: Multiply Factors with hidden variables and sum out from the product
+Hidden Variable: NDG
+Multiplying: 
+[NDG, NA] -> 0.009
+[~NDG, ~NA] -> 0.015
+[NDG, ~NA] -> 0.01
+[~NDG, NA] -> 0.002
+
+[~NDG, FS] -> 0.0008
+[~NDG, ~FS] -> 0.00646
+[NDG, ~FS] -> 0.01173
+[NDG, FS] -> 0.001
+
+Product: 
+[FS, NDG, ~NA] -> 0.00001
+[FS, ~NDG, ~NA] -> 0.0000120
+[~FS, NDG, ~NA] -> 0.0001173
+[~FS, NDG, NA] -> 0.00010557
+[FS, NDG, NA] -> 0.000009
+[~FS, ~NDG, ~NA] -> 0.00009690
+[~FS, ~NDG, NA] -> 0.00001292
+[FS, ~NDG, NA] -> 0.0000016
+
+Sumout: NDG
+Result: 
+[FS, NA] -> 0.0000106
+[~FS, ~NA] -> 0.00021420
+[~FS, NA] -> 0.00011849
+[FS, ~NA] -> 0.0000220
+
+Hidden Variable: NA
+Multiplying: 
+[NA] -> 0.3
+[~NA] -> 0.7
+
+[FS, ~NA] -> 0.0000220
+[~FS, ~NA] -> 0.00021420
+[~FS, NA] -> 0.00011849
+[FS, NA] -> 0.0000106
+
+Product: 
+[~FS, ~NA] -> 0.000149940
+[FS, NA] -> 0.00000318
+[FS, ~NA] -> 0.00001540
+[~FS, NA] -> 0.000035547
+
+Sumout: NA
+Result: 
+[FS] -> 0.00001858
+[~FS] -> 0.000185487
+
+--------------------------------------
+3: Multiply remaining factors: 
+[~FS] -> 0.95
+[FS] -> 0.05
+
+[FS] -> 0.03
+[~FS] -> 0.095
+
+[FS] -> 0.00001858
+[~FS] -> 0.000185487
+
+Result: 
+[FS] -> 9.949590E-10
+[~FS] -> 5.976252025E-7
+
+--------------------------------------
+4: Normalizing result: 
+[~FS] -> 0.9983379125
+[FS] -> 0.001662087353
+
+--------------------------------------
+P ([FS] | [FH, FM, FB]) = 0.001662087353 or 0.1662087353%

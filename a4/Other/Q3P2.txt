@@ -1,0 +1,308 @@
+Q2
+Starting Inference, with:
+Factors: 
+[NDG, ~FM, NA] -> 0.145
+[~NDG, ~FM, NA] -> 0.145
+[~NDG, FM, NA] -> 0.002
+[NDG, ~FM, ~NA] -> 0
+[~NDG, FM, ~NA] -> 0.015
+[NDG, FM, ~NA] -> 0.01
+[~NDG, ~FM, ~NA] -> 0.675
+[NDG, FM, NA] -> 0.009
+
+[FM] -> 0.0357
+[~FM] -> 0.964
+
+[FH, ~FM, ~NDG, FS] -> 0.0205
+[FH, FM, ~NDG, FS] -> 0.0008
+[~FH, FM, NDG, ~FS] -> 0.00632
+[~FH, ~FM, ~NDG, ~FS] -> 0.7790
+[~FH, ~FM, ~NDG, FS] -> 0.0205
+[~FH, FM, ~NDG, FS] -> 0.00077
+[~FH, ~FM, NDG, FS] -> 0.0018
+[~FH, ~FM, NDG, ~FS] -> 0.1102
+[FH, ~FM, NDG, FS] -> 0.00554
+[~FH, FM, NDG, FS] -> 0
+[FH, FM, NDG, ~FS] -> 0.01173
+[~FH, FM, ~NDG, ~FS] -> 0.000969
+[FH, FM, ~NDG, ~FS] -> 0.00646
+[FH, FM, NDG, FS] -> 0.001
+[FH, ~FM, NDG, ~FS] -> 0.02755
+[FH, ~FM, ~NDG, ~FS] -> 0
+
+[~FS] -> 0.95
+[FS] -> 0.05
+
+[FS, FB] -> 0.03
+[FS, ~FB] -> 0.02
+[~FS, ~FB] -> 0.855
+[~FS, FB] -> 0.095
+
+[~NA] -> 0.7
+[NA] -> 0.3
+
+Query: [FH]
+Hidden: [NDG, NA, FB, FS, FM]
+Evidence: []
+--------------------------------------
+1: Restrict Factors based on Evidence []
+Factors after restrictions: 
+[NDG, ~FM, NA] -> 0.145
+[~NDG, ~FM, NA] -> 0.145
+[~NDG, FM, NA] -> 0.002
+[NDG, ~FM, ~NA] -> 0
+[~NDG, FM, ~NA] -> 0.015
+[NDG, FM, ~NA] -> 0.01
+[~NDG, ~FM, ~NA] -> 0.675
+[NDG, FM, NA] -> 0.009
+
+[FM] -> 0.0357
+[~FM] -> 0.964
+
+[FH, ~FM, ~NDG, FS] -> 0.0205
+[FH, FM, ~NDG, FS] -> 0.0008
+[~FH, FM, NDG, ~FS] -> 0.00632
+[~FH, ~FM, ~NDG, ~FS] -> 0.7790
+[~FH, ~FM, ~NDG, FS] -> 0.0205
+[~FH, FM, ~NDG, FS] -> 0.00077
+[~FH, ~FM, NDG, FS] -> 0.0018
+[~FH, ~FM, NDG, ~FS] -> 0.1102
+[FH, ~FM, NDG, FS] -> 0.00554
+[~FH, FM, NDG, FS] -> 0
+[FH, FM, NDG, ~FS] -> 0.01173
+[~FH, FM, ~NDG, ~FS] -> 0.000969
+[FH, FM, ~NDG, ~FS] -> 0.00646
+[FH, FM, NDG, FS] -> 0.001
+[FH, ~FM, NDG, ~FS] -> 0.02755
+[FH, ~FM, ~NDG, ~FS] -> 0
+
+[~FS] -> 0.95
+[FS] -> 0.05
+
+[FS, FB] -> 0.03
+[FS, ~FB] -> 0.02
+[~FS, ~FB] -> 0.855
+[~FS, FB] -> 0.095
+
+[~NA] -> 0.7
+[NA] -> 0.3
+--------------------------------------
+2: Multiply Factors with hidden variables and sum out from the product
+Hidden Variable: NDG
+Multiplying: 
+[NDG, ~FM, NA] -> 0.145
+[~NDG, ~FM, ~NA] -> 0.675
+[~NDG, FM, NA] -> 0.002
+[~NDG, FM, ~NA] -> 0.015
+[~NDG, ~FM, NA] -> 0.145
+[NDG, FM, NA] -> 0.009
+[NDG, ~FM, ~NA] -> 0
+[NDG, FM, ~NA] -> 0.01
+
+[~FH, ~FM, ~NDG, FS] -> 0.0205
+[~FH, ~FM, ~NDG, ~FS] -> 0.7790
+[~FH, FM, ~NDG, ~FS] -> 0.000969
+[~FH, FM, ~NDG, FS] -> 0.00077
+[FH, ~FM, NDG, FS] -> 0.00554
+[FH, FM, ~NDG, FS] -> 0.0008
+[FH, FM, NDG, FS] -> 0.001
+[FH, ~FM, ~NDG, FS] -> 0.0205
+[FH, ~FM, NDG, ~FS] -> 0.02755
+[FH, FM, ~NDG, ~FS] -> 0.00646
+[FH, FM, NDG, ~FS] -> 0.01173
+[~FH, FM, NDG, FS] -> 0
+[FH, ~FM, ~NDG, ~FS] -> 0
+[~FH, ~FM, NDG, ~FS] -> 0.1102
+[~FH, FM, NDG, ~FS] -> 0.00632
+[~FH, ~FM, NDG, FS] -> 0.0018
+
+Product: 
+[FH, FM, NA, ~NDG, ~FS] -> 0.00001292
+[~FH, ~FM, ~NA, ~NDG, FS] -> 0.0138375
+[FH, ~FM, ~NA, NDG, ~FS] -> 0.00000
+[FH, ~FM, ~NA, ~NDG, FS] -> 0.0138375
+[~FH, FM, NA, ~NDG, FS] -> 0.00000154
+[~FH, ~FM, ~NA, NDG, FS] -> 0.0000
+[FH, FM, ~NA, NDG, FS] -> 0.00001
+[~FH, FM, ~NA, NDG, FS] -> 0.00
+[FH, FM, NA, NDG, FS] -> 0.000009
+[FH, FM, ~NA, ~NDG, FS] -> 0.0000120
+[~FH, FM, NA, NDG, ~FS] -> 0.00005688
+[~FH, FM, ~NA, ~NDG, ~FS] -> 0.000014535
+[~FH, ~FM, ~NA, NDG, ~FS] -> 0.0000
+[~FH, FM, ~NA, NDG, ~FS] -> 0.0000632
+[FH, FM, ~NA, NDG, ~FS] -> 0.0001173
+[~FH, FM, NA, NDG, FS] -> 0.000
+[FH, ~FM, ~NA, ~NDG, ~FS] -> 0.000
+[FH, ~FM, NA, ~NDG, ~FS] -> 0.000
+[~FH, FM, NA, ~NDG, ~FS] -> 0.000001938
+[~FH, ~FM, NA, ~NDG, FS] -> 0.0029725
+[FH, ~FM, NA, NDG, ~FS] -> 0.00399475
+[FH, ~FM, NA, ~NDG, FS] -> 0.0029725
+[FH, FM, ~NA, ~NDG, ~FS] -> 0.00009690
+[~FH, FM, ~NA, ~NDG, FS] -> 0.00001155
+[~FH, ~FM, NA, NDG, FS] -> 0.0002610
+[FH, ~FM, ~NA, NDG, FS] -> 0.00000
+[FH, ~FM, NA, NDG, FS] -> 0.00080330
+[FH, FM, NA, NDG, ~FS] -> 0.00010557
+[~FH, ~FM, ~NA, ~NDG, ~FS] -> 0.5258250
+[FH, FM, NA, ~NDG, FS] -> 0.0000016
+[~FH, ~FM, NA, NDG, ~FS] -> 0.0159790
+[~FH, ~FM, NA, ~NDG, ~FS] -> 0.1129550
+
+Sumout: NDG
+Result: 
+[FH, FM, NA, FS] -> 0.0000106
+[~FH, FM, NA, ~FS] -> 0.000058818
+[~FH, ~FM, ~NA, ~FS] -> 0.5258250
+[FH, ~FM, ~NA, FS] -> 0.0138375
+[~FH, FM, NA, FS] -> 0.00000154
+[~FH, ~FM, ~NA, FS] -> 0.0138375
+[FH, FM, ~NA, FS] -> 0.0000220
+[FH, FM, NA, ~FS] -> 0.00011849
+[FH, ~FM, NA, ~FS] -> 0.00399475
+[~FH, FM, ~NA, FS] -> 0.00001155
+[~FH, ~FM, NA, ~FS] -> 0.1289340
+[~FH, ~FM, NA, FS] -> 0.0032335
+[FH, ~FM, NA, FS] -> 0.00377580
+[FH, ~FM, ~NA, ~FS] -> 0.00000
+[~FH, FM, ~NA, ~FS] -> 0.000077735
+[FH, FM, ~NA, ~FS] -> 0.00021420
+
+Hidden Variable: NA
+Multiplying: 
+[~NA] -> 0.7
+[NA] -> 0.3
+
+[FH, FM, ~NA, FS] -> 0.0000220
+[FH, ~FM, ~NA, FS] -> 0.0138375
+[~FH, ~FM, ~NA, ~FS] -> 0.5258250
+[~FH, FM, NA, FS] -> 0.00000154
+[~FH, FM, ~NA, FS] -> 0.00001155
+[~FH, FM, NA, ~FS] -> 0.000058818
+[FH, FM, ~NA, ~FS] -> 0.00021420
+[FH, FM, NA, ~FS] -> 0.00011849
+[~FH, ~FM, NA, ~FS] -> 0.1289340
+[FH, FM, NA, FS] -> 0.0000106
+[FH, ~FM, NA, ~FS] -> 0.00399475
+[~FH, FM, ~NA, ~FS] -> 0.000077735
+[FH, ~FM, ~NA, ~FS] -> 0.00000
+[~FH, ~FM, ~NA, FS] -> 0.0138375
+[~FH, ~FM, NA, FS] -> 0.0032335
+[FH, ~FM, NA, FS] -> 0.00377580
+
+Product: 
+[~NA, FH, FS, ~FM] -> 0.00968625
+[NA, FH, ~FS, FM] -> 0.000035547
+[~NA, ~FH, FS, ~FM] -> 0.00968625
+[NA, FH, FS, ~FM] -> 0.001132740
+[NA, FH, ~FS, ~FM] -> 0.001198425
+[~NA, FH, ~FS, FM] -> 0.000149940
+[NA, ~FH, ~FS, FM] -> 0.0000176454
+[~NA, FH, FS, FM] -> 0.00001540
+[~NA, FH, ~FS, ~FM] -> 0.000000
+[~NA, ~FH, FS, FM] -> 0.000008085
+[NA, ~FH, FS, FM] -> 4.62E-7
+[NA, ~FH, ~FS, ~FM] -> 0.03868020
+[~NA, ~FH, ~FS, ~FM] -> 0.36807750
+[NA, ~FH, FS, ~FM] -> 0.00097005
+[~NA, ~FH, ~FS, FM] -> 0.0000544145
+[NA, FH, FS, FM] -> 0.00000318
+
+Sumout: NA
+Result: 
+[FH, ~FS, FM] -> 0.000185487
+[FH, ~FS, ~FM] -> 0.001198425
+[~FH, ~FS, ~FM] -> 0.40675770
+[FH, FS, FM] -> 0.00001858
+[~FH, FS, FM] -> 0.000008547
+[~FH, FS, ~FM] -> 0.01065630
+[~FH, ~FS, FM] -> 0.0000720599
+[FH, FS, ~FM] -> 0.010818990
+
+Hidden Variable: FB
+Multiplying: 
+[FS, FB] -> 0.03
+[FS, ~FB] -> 0.02
+[~FS, FB] -> 0.095
+[~FS, ~FB] -> 0.855
+
+Product: 
+[FS, FB] -> 0.03
+[FS, ~FB] -> 0.02
+[~FS, FB] -> 0.095
+[~FS, ~FB] -> 0.855
+
+Sumout: FB
+Result: 
+[~FS] -> 0.950
+[FS] -> 0.05
+
+Hidden Variable: FS
+Multiplying: 
+[~FS] -> 0.95
+[FS] -> 0.05
+
+[~FH, FS, ~FM] -> 0.01065630
+[FH, FS, FM] -> 0.00001858
+[~FH, ~FS, ~FM] -> 0.40675770
+[FH, FS, ~FM] -> 0.010818990
+[FH, ~FS, FM] -> 0.000185487
+[~FH, FS, FM] -> 0.000008547
+[~FH, ~FS, FM] -> 0.0000720599
+[FH, ~FS, ~FM] -> 0.001198425
+
+[FS] -> 0.05
+[~FS] -> 0.950
+
+Product: 
+[FH, ~FS, ~FM] -> 0.001081578562
+[FH, FS, FM] -> 4.6450E-8
+[~FH, ~FS, ~FM] -> 0.3670988242
+[~FH, ~FS, FM] -> 0.00006503405975
+[~FH, FS, ~FM] -> 0.000026640750
+[~FH, FS, FM] -> 2.13675E-8
+[FH, FS, ~FM] -> 0.0000270474750
+[FH, ~FS, FM] -> 0.0001674020175
+
+Sumout: FS
+Result: 
+[~FH, ~FM] -> 0.3671254650
+[FH, ~FM] -> 0.001108626037
+[~FH, FM] -> 0.00006505542725
+[FH, FM] -> 0.0001674484675
+
+Hidden Variable: FM
+Multiplying: 
+[FM] -> 0.0357
+[~FM] -> 0.964
+
+[~FH, FM] -> 0.00006505542725
+[~FH, ~FM] -> 0.3671254650
+[FH, FM] -> 0.0001674484675
+[FH, ~FM] -> 0.001108626037
+
+Product: 
+[~FH, ~FM] -> 0.3539089483
+[~FH, FM] -> 0.000002322478753
+[FH, ~FM] -> 0.001068715500
+[FH, FM] -> 0.000005977910290
+
+Sumout: FM
+Result: 
+[~FH] -> 0.3539112708
+[FH] -> 0.001074693410
+--------------------------------------
+3: Multiply remaining factors: 
+[~FH] -> 0.3539112708
+[FH] -> 0.001074693410
+
+Result: 
+[~FH] -> 0.3539112708
+[FH] -> 0.001074693410
+--------------------------------------
+4: Normalizing result: 
+[~FH] -> 0.9969725750
+[FH] -> 0.003027425077
+--------------------------------------
+P ([FH] | []) = 0.003027425077 or 0.3027425077%

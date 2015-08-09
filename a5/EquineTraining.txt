@@ -1,0 +1,41 @@
+-------------------------------------------------------
+Phase #1: Building decision tree for Equine Colic classification
+
+Selecting best attribute: 
+Attribute: Endotoxin
+Threshold: 13.425
+Information Gain: 0.6174924611847552
+
+Selecting best attribute: 
+Attribute: K
+Threshold: 3.55
+Information Gain: 0.5088358471784984
+
+Selecting best attribute: 
+Attribute: Na
+Threshold: 141.5
+Information Gain: 0.4394969869215134
+
+Selecting best attribute: 
+Attribute: GLDH
+Threshold: 24.65
+Information Gain: 0.15649106290570153
+
+Decision Tree:
+
+  Colic
+4, 13.425
+      Colic
+    8, 24.65
+      Healthy
+  0, 3.55
+      Healthy
+    1, 141.5
+      Colic
+-------------------------------------------------------
+Phase #2: Classification of Equine Colic disease
+
+Correct labels: 132
+Total data points: 132
+Accuracy: 100.0%
+-------------------------------------------------------

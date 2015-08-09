@@ -1,0 +1,110 @@
+Q5
+Starting Inference, with:
+Factors: 
+[~NDG, FM, NA] -> 0.002
+[~NDG, ~FM, ~NA] -> 0.675
+[NDG, FM, ~NA] -> 0.01
+[~NDG, FM, ~NA] -> 0.015
+[NDG, FM, NA] -> 0.009
+[NDG, ~FM, ~NA] -> 0
+[NDG, ~FM, NA] -> 0.145
+[~NDG, ~FM, NA] -> 0.145
+
+[FM] -> 0.0357
+[~FM] -> 0.964
+
+[FH, FM, NDG, FS] -> 0.001
+[FH, ~FM, ~NDG, FS] -> 0.0205
+[FH, FM, NDG, ~FS] -> 0.01173
+[~FH, FM, ~NDG, ~FS] -> 0.000969
+[FH, ~FM, ~NDG, ~FS] -> 0
+[FH, ~FM, NDG, FS] -> 0.00554
+[FH, FM, ~NDG, ~FS] -> 0.00646
+[~FH, FM, ~NDG, FS] -> 0.00077
+[~FH, FM, NDG, FS] -> 0
+[~FH, ~FM, ~NDG, ~FS] -> 0.7790
+[~FH, FM, NDG, ~FS] -> 0.00632
+[~FH, ~FM, ~NDG, FS] -> 0.0205
+[FH, FM, ~NDG, FS] -> 0.0008
+[~FH, ~FM, NDG, FS] -> 0.0018
+[FH, ~FM, NDG, ~FS] -> 0.02755
+[~FH, ~FM, NDG, ~FS] -> 0.1102
+
+[~FS] -> 0.95
+[FS] -> 0.05
+
+[FS, ~FB] -> 0.02
+[~FS, FB] -> 0.095
+[FS, FB] -> 0.03
+[~FS, ~FB] -> 0.855
+
+[~NA] -> 0.7
+[NA] -> 0.3
+
+Query: [FS]
+Hidden: [NDG]
+Evidence: [FH, FM, FB, NA]
+
+--------------------------------------
+1: Restrict Factors based on Evidence [FH, FM, FB, NA]
+Factors after restrictions: 
+[NDG] -> 0.009
+[~NDG] -> 0.002
+
+[~NDG, ~FS] -> 0.00646
+[NDG, ~FS] -> 0.01173
+[NDG, FS] -> 0.001
+[~NDG, FS] -> 0.0008
+
+[~FS] -> 0.95
+[FS] -> 0.05
+
+[FS] -> 0.03
+[~FS] -> 0.095
+
+
+--------------------------------------
+2: Multiply Factors with hidden variables and sum out from the product
+Hidden Variable: NDG
+Multiplying: 
+[NDG] -> 0.009
+[~NDG] -> 0.002
+
+[~NDG, FS] -> 0.0008
+[~NDG, ~FS] -> 0.00646
+[NDG, FS] -> 0.001
+[NDG, ~FS] -> 0.01173
+
+Product: 
+[~FS, ~NDG] -> 0.00001292
+[~FS, NDG] -> 0.00010557
+[FS, NDG] -> 0.000009
+[FS, ~NDG] -> 0.0000016
+
+Sumout: NDG
+Result: 
+[FS] -> 0.0000106
+[~FS] -> 0.00011849
+
+--------------------------------------
+3: Multiply remaining factors: 
+[FS] -> 0.05
+[~FS] -> 0.95
+
+[~FS] -> 0.095
+[FS] -> 0.03
+
+[FS] -> 0.0000106
+[~FS] -> 0.00011849
+
+Result: 
+[FS] -> 1.702890E-10
+[~FS] -> 1.145297680E-7
+
+--------------------------------------
+4: Normalizing result: 
+[~FS] -> 0.9985153539
+[FS] -> 0.001484646167
+
+--------------------------------------
+P ([FS] | [FH, FM, FB, NA]) = 0.001484646167 or 0.1484646167%

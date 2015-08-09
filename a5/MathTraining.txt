@@ -1,0 +1,482 @@
+-------------------------------------------------------
+Phase #1: Building decision tree for Math Student Performance classification
+
+Selecting best attribute: 
+Attribute: Previous failures
+Threshold: 0.5
+Information Gain: 0.05213871314315577
+
+Selecting best attribute: 
+Attribute: Days of class missed
+Threshold: 21.5
+Information Gain: 0.027582979546835862
+
+Selecting best attribute: 
+Attribute: Travel time
+Threshold: 3.5
+Information Gain: 0.021773290406922996
+
+Selecting best attribute: 
+Attribute: Frequency of seeing friends
+Threshold: 2.5
+Information Gain: 0.018252760451768935
+
+Selecting best attribute: 
+Attribute: Health status
+Threshold: 1.5
+Information Gain: 0.0923778015608967
+
+Selecting best attribute: 
+Attribute: Days of class missed
+Threshold: 5.0
+Information Gain: 0.06699672745561203
+
+Selecting best attribute: 
+Attribute: Home
+Threshold: 0.5
+Information Gain: 0.10002566891096987
+
+Selecting best attribute: 
+Attribute: Quality of family relationships
+Threshold: 4.5
+Information Gain: 0.1277217544981898
+
+Selecting best attribute: 
+Attribute: Health status
+Threshold: 2.5
+Information Gain: 0.1271921109730324
+
+Selecting best attribute: 
+Attribute: Father's education
+Threshold: 2.5
+Information Gain: 0.1270528389126364
+
+Selecting best attribute: 
+Attribute: Free time after school
+Threshold: 4.5
+Information Gain: 0.16715678748009255
+
+Selecting best attribute: 
+Attribute: Extra-curricular activities
+Threshold: 0.5
+Information Gain: 0.2516291673878229
+
+Selecting best attribute: 
+Attribute: Gender of caretaker
+Threshold: 0.5
+Information Gain: 0.23645279766002802
+
+Selecting best attribute: 
+Attribute: Free time after school
+Threshold: 2.5
+Information Gain: 0.34758988139079705
+
+Selecting best attribute: 
+Attribute: Sex
+Threshold: 0.5
+Information Gain: 0.4199730940219749
+
+Selecting best attribute: 
+Attribute: School Attended
+Threshold: 0.5
+Information Gain: 0.9182958340544896
+
+Selecting best attribute: 
+Attribute: Age
+Threshold: 17.5
+Information Gain: 0.4067153767696875
+
+Selecting best attribute: 
+Attribute: Father's education
+Threshold: 1.5
+Information Gain: 0.45810589515712374
+
+Selecting best attribute: 
+Attribute: Home
+Threshold: 0.5
+Information Gain: 0.9182958340544896
+
+Selecting best attribute: 
+Attribute: Father's education
+Threshold: 1.5
+Information Gain: 0.0456445428229465
+
+Selecting best attribute: 
+Attribute: Free time after school
+Threshold: 2.5
+Information Gain: 0.15007189740414284
+
+Selecting best attribute: 
+Attribute: Health status
+Threshold: 4.5
+Information Gain: 0.4591479170272448
+
+Selecting best attribute: 
+Attribute: Age
+Threshold: 16.5
+Information Gain: 0.9182958340544896
+
+Selecting best attribute: 
+Attribute: Quality of family relationships
+Threshold: 3.5
+Information Gain: 0.2045218714794187
+
+Selecting best attribute: 
+Attribute: Sex
+Threshold: 0.5
+Information Gain: 0.9182958340544896
+
+Selecting best attribute: 
+Attribute: Days of class missed
+Threshold: 5.5
+Information Gain: 0.22837518378373278
+
+Selecting best attribute: 
+Attribute: School Attended
+Threshold: 0.5
+Information Gain: 1.0
+
+Selecting best attribute: 
+Attribute: Weekend alcohol consumption
+Threshold: 2.5
+Information Gain: 0.03490346627367713
+
+Selecting best attribute: 
+Attribute: Age
+Threshold: 17.5
+Information Gain: 0.12346046720702553
+
+Selecting best attribute: 
+Attribute: Sex
+Threshold: 0.5
+Information Gain: 0.1435890623688481
+
+Selecting best attribute: 
+Attribute: Days of class missed
+Threshold: 1.0
+Information Gain: 0.11157078888372529
+
+Selecting best attribute: 
+Attribute: Age
+Threshold: 16.5
+Information Gain: 0.46956521111470706
+
+Selecting best attribute: 
+Attribute: Gender of caretaker
+Threshold: 0.5
+Information Gain: 0.7219280948873623
+
+Selecting best attribute: 
+Attribute: Health status
+Threshold: 3.5
+Information Gain: 0.19087450462110933
+
+Selecting best attribute: 
+Attribute: Mother's education
+Threshold: 3.5
+Information Gain: 0.2516291673878229
+
+Selecting best attribute: 
+Attribute: Father's education
+Threshold: 3.5
+Information Gain: 0.4591479170272448
+
+Selecting best attribute: 
+Attribute: Family Size
+Threshold: 0.5
+Information Gain: 0.8112781244591328
+
+Selecting best attribute: 
+Attribute: Romantic relationship
+Threshold: 0.5
+Information Gain: 0.11629598989239365
+
+Selecting best attribute: 
+Attribute: Family educational support
+Threshold: 0.5
+Information Gain: 0.6500224216483541
+
+Selecting best attribute: 
+Attribute: Family educational support
+Threshold: 0.5
+Information Gain: 0.22478750958935978
+
+Selecting best attribute: 
+Attribute: School Attended
+Threshold: 0.5
+Information Gain: 0.19811742113040354
+
+Selecting best attribute: 
+Attribute: Age
+Threshold: 19.0
+Information Gain: 0.31668908831502096
+
+Selecting best attribute: 
+Attribute: Weekday alcohol consumption
+Threshold: 1.5
+Information Gain: 0.7219280948873623
+
+Selecting best attribute: 
+Attribute: Home
+Threshold: 0.5
+Information Gain: 0.1011360148320043
+
+Selecting best attribute: 
+Attribute: Mother's education
+Threshold: 3.5
+Information Gain: 0.43359411726054453
+
+Selecting best attribute: 
+Attribute: Father's education
+Threshold: 3.0
+Information Gain: 0.9182958340544896
+
+Selecting best attribute: 
+Attribute: Health status
+Threshold: 1.5
+Information Gain: 0.10879408669903734
+
+Selecting best attribute: 
+Attribute: Mother's education
+Threshold: 3.5
+Information Gain: 0.08930861846377391
+
+Selecting best attribute: 
+Attribute: Family Size
+Threshold: 0.5
+Information Gain: 0.182308984608897
+
+Selecting best attribute: 
+Attribute: Gender of caretaker
+Threshold: 0.5
+Information Gain: 0.24545967395890878
+
+Selecting best attribute: 
+Attribute: Mother's education
+Threshold: 1.5
+Information Gain: 0.19350684337293445
+
+Selecting best attribute: 
+Attribute: Age
+Threshold: 16.5
+Information Gain: 0.31976006206417584
+
+Selecting best attribute: 
+Attribute: Mother's education
+Threshold: 2.5
+Information Gain: 1.0
+
+Selecting best attribute: 
+Attribute: Family Size
+Threshold: 0.5
+Information Gain: 0.22600024438491662
+
+Selecting best attribute: 
+Attribute: Weekend alcohol consumption
+Threshold: 3.5
+Information Gain: 0.2780719051126377
+
+Selecting best attribute: 
+Attribute: Study time
+Threshold: 1.5
+Information Gain: 0.7219280948873623
+
+Selecting best attribute: 
+Attribute: Extra educational support
+Threshold: 0.5
+Information Gain: 0.7219280948873623
+
+Selecting best attribute: 
+Attribute: Primary caretaker
+Threshold: 0.5
+Information Gain: 0.13536509514407458
+
+Selecting best attribute: 
+Attribute: Weekend alcohol consumption
+Threshold: 2.5
+Information Gain: 0.4089866249299394
+
+Selecting best attribute: 
+Attribute: Study time
+Threshold: 1.5
+Information Gain: 0.5032583347756457
+
+Selecting best attribute: 
+Attribute: Family educational support
+Threshold: 0.5
+Information Gain: 0.6500224216483541
+
+Selecting best attribute: 
+Attribute: Health status
+Threshold: 4.5
+Information Gain: 0.13104163868572294
+
+Selecting best attribute: 
+Attribute: Previous failures
+Threshold: 1.5
+Information Gain: 0.19482707682211142
+
+Selecting best attribute: 
+Attribute: Romantic relationship
+Threshold: 0.5
+Information Gain: 0.24902249956730627
+
+Selecting best attribute: 
+Attribute: Sex
+Threshold: 0.5
+Information Gain: 0.7219280948873623
+
+Selecting best attribute: 
+Attribute: Quality of family relationships
+Threshold: 3.5
+Information Gain: 0.3219280948873623
+
+Selecting best attribute: 
+Attribute: Father's education
+Threshold: 1.5
+Information Gain: 1.0
+
+Decision Tree:
+
+        Failed
+      12, 1.5
+            Failed
+          21, 3.5
+              Passed
+            7, 1.5
+              Failed
+        20, 0.5
+            Passed
+          1, 0.5
+            Failed
+    26, 4.5
+      Failed
+  8, 0.5
+        Passed
+      14, 0.5
+        Failed
+    25, 2.5
+        Passed
+      11, 1.5
+        Failed
+12, 0.5
+    Failed
+  27, 21.5
+      Failed
+    10, 3.5
+                    Failed
+                  4, 0.5
+                        Passed
+                      13, 0.5
+                        Failed
+                    25, 3.5
+                        Failed
+                      11, 1.5
+                        Passed
+                6, 3.5
+                    Passed
+                  4, 0.5
+                      Failed
+                    9, 0.5
+                          Passed
+                        2, 16.5
+                            Failed
+                          6, 2.5
+                            Passed
+                      6, 1.5
+                        Failed
+              26, 1.5
+                Passed
+            3, 0.5
+                  Passed
+                7, 3.0
+                  Failed
+              6, 3.5
+                Failed
+          25, 2.5
+                      Passed
+                    2, 19.0
+                        Passed
+                      24, 1.5
+                        Failed
+                  0, 0.5
+                    Passed
+                14, 0.5
+                  Passed
+              20, 0.5
+                  Passed
+                14, 0.5
+                  Failed
+            2, 17.5
+                Passed
+              1, 0.5
+                    Passed
+                  26, 3.5
+                      Passed
+                    6, 3.5
+                        Failed
+                      7, 3.5
+                          Failed
+                        4, 0.5
+                          Passed
+                27, 1.0
+                    Passed
+                  2, 16.5
+                      Passed
+                    9, 0.5
+                      Failed
+        7, 1.5
+                  Passed
+                0, 0.5
+                  Failed
+              27, 5.5
+                Failed
+            21, 3.5
+                Failed
+              1, 0.5
+                Passed
+          22, 2.5
+                Failed
+              2, 16.5
+                Passed
+            26, 4.5
+              Passed
+      23, 2.5
+              Passed
+            2, 17.5
+                Failed
+              7, 1.5
+                  Failed
+                3, 0.5
+                  Passed
+          27, 5.0
+                Passed
+              21, 4.5
+                      Failed
+                    22, 4.5
+                        Passed
+                      16, 0.5
+                          Failed
+                        9, 0.5
+                              Failed
+                            1, 0.5
+                                Passed
+                              0, 0.5
+                                Failed
+                          22, 2.5
+                            Passed
+                  7, 2.5
+                    Passed
+                26, 2.5
+                  Failed
+            3, 0.5
+              Passed
+        26, 1.5
+          Passed
+-------------------------------------------------------
+Phase #2: Classification of Math Student Performance
+
+Correct labels: 249
+Total data points: 249
+Accuracy: 100.0%
+-------------------------------------------------------
